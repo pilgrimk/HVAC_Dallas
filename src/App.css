@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.my-content-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding:80px;
+  width: 80vw;
+}
+
+.my-content-container.iframe {
+  width: "560";
+  height: "315";
+}
+
+.imageContainer.img{
+  padding-left:20px;
+  padding-right:20px;
+}
+
+@media (max-width: 960px) {
+  .my-content-container {
+    flex-direction: column;
+  }
+}
