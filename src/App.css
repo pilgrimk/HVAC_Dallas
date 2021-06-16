@@ -13,9 +13,8 @@
   width: 80vw;
 }
 
-.my-content-container.iframe {
-  width: "560";
-  height: "315";
+.my-content-container .item {
+  width: 48%;
 }
 
 .imageContainer.img{

@@ -6,7 +6,7 @@ function Services() {
 
     return (
         <div className="my-content-container">
-            <div>
+            <div className="item">
                 <h2>Services</h2>
                 <br></br>
                 <p>Do you need a new HVAC system?
@@ -18,7 +18,7 @@ function Services() {
                 <p>Call today for a free estimate from one of our qualified technicians!
                 </p><br></br>
             </div>
-            <iframe src={src_url_value} title="YouTube video player" frameBorder="0"
+            <iframe src={src_url_value} title="YouTube video player" frameBorder="0" width="600" height="400"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
     )

@@ -17,7 +17,7 @@ const HomeDetail = (props) => {
             </p><br></br>
             <p>Call now for a free estimate on installation of a new air conditioner from one of America's top rated companies - {props.phone}!
             </p><br></br>
-            <iframe src={src_url_value} title="YouTube video player" frameBorder="0"
+            <iframe src={src_url_value} title="YouTube video player" frameBorder="0" width="600" height="400"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
     )

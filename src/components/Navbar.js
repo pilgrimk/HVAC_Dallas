@@ -47,7 +47,7 @@ function Navbar(props) {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        {props.company_name} <i className="fas fa-snowflake"></i>
+                        {props.company_name}
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

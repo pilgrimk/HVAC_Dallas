@@ -45,20 +45,19 @@
   }
   
   .cards__item__pic-wrap {
-    position: center;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
     padding-top: 5%;
+    padding-bottom: 5%;
     overflow: hidden;
   }
   
   .cards__item__img {
-    position: center;
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    max-height: 100%;
-    object-fit: cover;
+    width: 200px;
+    height: 200px;
     transition: all 0.2s linear;
   }
   

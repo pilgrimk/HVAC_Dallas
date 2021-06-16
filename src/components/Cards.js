@@ -1,7 +1,9 @@
 import React from 'react';
 import CardItem from './CardItem';
 import './Cards.css';
-import img_src_value from './images/snowflake-solid.svg';
+import img_src_value1 from './images/fire-solid.svg';
+import img_src_value2 from './images/fan-solid.svg';
+import img_src_value3 from './images/snowflake-solid.svg';
 
 function Cards() {
   var card1_title = 'Fast and Friendly Service!'
@@ -21,19 +23,19 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src={img_src_value}
+              src={img_src_value1}
               title={card1_title}
               text={card1_text}
               path={card_path}
             />
             <CardItem
-              src={img_src_value}
+              src={img_src_value2}
               title={card2_title}
               text={card2_text}
               path={card_path}
             />
             <CardItem
-              src={img_src_value}
+              src={img_src_value3}
               title={card3_title}
               text={card3_text}
               path={card_path}
