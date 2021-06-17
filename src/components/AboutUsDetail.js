@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img_src_value from './images/fast-and-friendly-service.jpg';
 
 const AboutUsDetail = () => {
+      useEffect(() => {
+            window.scrollTo(0, 0)
+      }, [])
+
       return (
             <div>
                   <h2>About Us</h2>

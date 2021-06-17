@@ -6,12 +6,12 @@ export const MenuItems = [
     },
     {
         title: 'Air Conditioning',
-        path: '/air',
+        path: '/airconditioning',
         cName: 'dropdown-link'
     },
     {
         title: 'Water Heaters',
-        path: '/water',
+        path: '/waterheater',
         cName: 'dropdown-link'
     },        
 ]

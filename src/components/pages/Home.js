@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HomeDetail from '../HomeDetail';
 import ContactUsDetail from '../ContactUsDetail';
 import '../../App.css';
 
 const Home = (props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+  }, [])
+      
     return (
         <div className="my-content-container">
             <HomeDetail 

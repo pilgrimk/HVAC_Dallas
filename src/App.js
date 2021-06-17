@@ -11,6 +11,8 @@ import WaterHeater from './components/pages/WaterHeater';
 import MapArea from './components/MapArea';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
+import TOS from './components/pages/TOS';
+import Privacy from './components/pages/Privacy';
 import {
   BrowserRouter as Router,
   Switch,
@@ -74,15 +76,21 @@ const App = () => {
               city={city_value}
               state_short={state_short_value} />
           </Route>
-          <Route path="/air">
+          <Route path="/airconditioning">
             <AirConditioning
               city={city_value}
               state_short={state_short_value} />
           </Route>
-          <Route path="/water">
+          <Route path="/waterheater">
             <WaterHeater
               city={city_value}
               state_short={state_short_value} />
+          </Route>
+          <Route path="/tos">
+            <TOS />
+          </Route>
+          <Route path="/privacy">
+            <Privacy />
           </Route>
         </Switch>
 
