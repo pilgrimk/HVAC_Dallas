@@ -18,7 +18,7 @@ const AboutUsDetail = () => {
                   </p><br></br>
                   <p>Call us right now and schedule an appointment with one of our qualified professionals today!
                   </p><br></br>
-                  <img src={img_src_value} alt="fast and friendly service" />
+                  <img className='about-us-image' src={img_src_value} alt="fast and friendly service" />
             </div>
       )
 }

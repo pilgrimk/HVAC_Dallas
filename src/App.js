@@ -20,6 +20,8 @@ import {
 } from 'react-router-dom'
 
 var company_name_value = "HVAC Dallas"
+var llc_name_value = "HVAC Dallas LLC"
+var llc_url_value = "https://hvacdallas.homeservicegroups.com"
 var icon_href_value = "/heating.png"
 var content_value = "HVAC services. Heating. Air conditioning. Cooling. Dallas."
 var phone_value = "214-845-5328"
@@ -28,6 +30,8 @@ var state_long_value = "Texas"
 var state_short_value = "TX"
 var zip_value = "75201"
 var url_value = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429176.33077900583!2d-97.01174930575758!3d32.82035247875392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2sDallas%2C%20TX!5e0!3m2!1sen!2sus!4v1622593535418!5m2!1sen!2sus"
+var home_src_url_value = "https://www.youtube.com/embed/fW7dgIYg0eo"
+var svc_src_url_value = "https://www.youtube.com/embed/vJjaRTPiksA"
 
 const App = () => {
   return (
@@ -48,7 +52,8 @@ const App = () => {
               city={city_value}
               state_long={state_long_value}
               zip={zip_value}
-              phone={phone_value} />
+              phone={phone_value}
+              src_url= {home_src_url_value} />
           </Route>
           <Route path="/home">
             <Home
@@ -56,7 +61,8 @@ const App = () => {
               city={city_value}
               state_long={state_long_value}
               zip={zip_value}
-              phone={phone_value} />
+              phone={phone_value} 
+              src_url= {home_src_url_value} />
           </Route>
           <Route path="/about">
             <About
@@ -68,8 +74,7 @@ const App = () => {
           </Route>
           <Route path="/services">
             <Services
-              company_name={company_name_value}
-              phone={phone_value} />
+              src_url={svc_src_url_value} />
           </Route>          
           <Route path="/heating">
             <Heating
@@ -87,10 +92,17 @@ const App = () => {
               state_short={state_short_value} />
           </Route>
           <Route path="/tos">
-            <TOS />
+            <TOS 
+              llc_name={llc_name_value} 
+              llc_url={llc_url_value}/>
           </Route>
           <Route path="/privacy">
-            <Privacy />
+            <Privacy
+              company_name={company_name_value} 
+              llc_name={llc_name_value} 
+              llc_url={llc_url_value}
+              city={city_value}
+              state_short={state_short_value} />
           </Route>
         </Switch>
 

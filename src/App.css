@@ -13,17 +13,37 @@
   width: 80vw;
 }
 
-.my-content-container .item {
-  width: 48%;
+.container-item {
+  max-width: 50%;
 }
 
-.imageContainer.img{
+.video-player {
+  width: 600px;
+  height: 350px;
+}
+
+.about-us-image{
   padding-left:20px;
   padding-right:20px;
 }
 
 @media (max-width: 960px) {
   .my-content-container {
+    width: 100%;
     flex-direction: column;
+  }
+
+  .container-item {
+    max-width: 95%;
+  }
+
+  .about-us-image{
+    width: 450px;
+    height: auto;
+  }  
+  
+  .video-player {
+    width: 400px;
+    height: 300px;
   }
 }

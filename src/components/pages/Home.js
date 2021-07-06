@@ -12,7 +12,8 @@ const Home = (props) => {
         <div className="my-content-container">
             <HomeDetail 
                 company_name={props.company_name}
-                phone={props.phone}/>
+                phone={props.phone}
+                src_url={props.src_url}/>
             <ContactUsDetail 
                 company_name={props.company_name}
                 city={props.city}

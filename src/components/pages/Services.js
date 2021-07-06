@@ -1,12 +1,10 @@
 import React from 'react';
 import '../../App.css';
 
-function Services() {
-    const src_url_value = "https://www.youtube.com/embed/vJjaRTPiksA"
-
+function Services(props) {
     return (
-        <div className="my-content-container">
-            <div className="item">
+        <div className='my-content-container'>
+            <div className='container-item'>
                 <h2>Services</h2>
                 <br></br>
                 <p>Do you need a new HVAC system?
@@ -18,7 +16,7 @@ function Services() {
                 <p>Call today for a free estimate from one of our qualified technicians!
                 </p><br></br>
             </div>
-            <iframe src={src_url_value} title="YouTube video player" frameBorder="0" width="600" height="400"
+            <iframe className='video-player' src={props.src_url} title="YouTube video player" frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
     )

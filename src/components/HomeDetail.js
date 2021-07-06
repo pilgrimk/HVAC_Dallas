@@ -1,8 +1,6 @@
 import React from 'react';
 
 const HomeDetail = (props) => {
-    const src_url_value = "https://www.youtube.com/embed/fW7dgIYg0eo"
-
     return (
         <div>
             <h2>{props.company_name}</h2>
@@ -17,7 +15,7 @@ const HomeDetail = (props) => {
             </p><br></br>
             <p>Call now for a free estimate on installation of a new air conditioner from one of America's top rated companies - {props.phone}!
             </p><br></br>
-            <iframe src={src_url_value} title="YouTube video player" frameBorder="0" width="600" height="400"
+            <iframe className='video-player' src={props.src_url} title="YouTube video player" frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
     )
